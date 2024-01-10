@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import Card from "./Card";
 
@@ -8,6 +9,7 @@ const Register = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
+    const navigate = useNavigate();
     const checkEmail = (users) => {
         const user = users.find((user) => user.email === email);
         return user;
@@ -25,6 +27,7 @@ const Register = () => {
                 const newUser = { username, email, password };
                 await axios.post("/users", newUser);
                 alert("User created!");
+                navigate("/Home")
             }
         } catch (error) {
             console.error("Error during user registration:", error);
