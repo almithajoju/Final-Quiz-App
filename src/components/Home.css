@@ -3,15 +3,10 @@
   }
   
   .question-card {
-    /* Center the div  */
     margin: 0 auto;
-  
-    /* Dimensions  */
-    width: 80%; /* Can be in percentage also. */
-    height: auto;
-  
-    /* Visual  */
-    background-color: rgb(180, 180, 180);
+    width: 80%; 
+    height: auto;  
+    background-color: #1c1c1c;
     padding: 16px;
     border-radius: 16px;
     color: white;
@@ -33,23 +28,17 @@
   }
   
   .question-text {
-    color: darkblue;
+    color:  #ed844f;
     font-size: 24px;
+    margin: 20px;
   }
   
-  /* Final Results  */
-  
   .final-results {
-    /* Center the div  */
     margin: 0 auto;
-  
-    /* Dimensions  */
-    width: 50%; /* Can be in percentage also. */
+    width: 50%; 
     height: auto;
-    margin-top: 64px;
-  
-    /* Visual  */
-    background-color: rgb(106, 94, 206);
+    margin-top: 64px; 
+    background-color:  #1c1c1c;
     padding: 16px;
     border-radius: 16px;
     color: white;
@@ -58,7 +47,7 @@
   }
   
   button {
-    background-color: red; /* Green */
+    background-color:  #ed844f; 
     border: none;
     color: white;
     padding: 16px 24px;
@@ -67,7 +56,7 @@
     display: inline-block;
     font-size: 16px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin: 20px;
     border-radius: 24px;
   }
 

@@ -38,6 +38,12 @@
       "email": "aappu@gmail",
       "password": "Appu123",
       "id": 7
+    },
+    {
+      "username": "",
+      "email": "",
+      "password": "",
+      "id": 8
     }
   ]
 }

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useNavigate ,Link} from "react-router-dom";
 
 import Card from "./Card";
 
@@ -68,7 +68,10 @@ const Login = () => {
                     <button className="btn" type="submit" onClick={handleSubmit}>
                         <p>Log in</p>
                     </button>
-
+                    <p>
+                        Don't have an account?{' '}
+                            <Link to="/" className="sign-up-link">Sign Up</Link>
+                    </p>
                 </form>
             </Card>
         </div>

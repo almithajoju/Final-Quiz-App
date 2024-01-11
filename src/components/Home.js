@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Home.css";
-import { Link , useNavigate } from 'react-router-dom';
+import { Link  } from 'react-router-dom';
 
 function Quizz() {
   // Properties
@@ -81,20 +81,17 @@ function Quizz() {
 
   return (
     <div className="App">
-      {/* 1. Header  */}
+      {/* Header  */}
       <h1> Quiz 🇺🇸</h1>
 
-      {/* 2. Current Score  */}
+      {/* Current Score  */}
       <h2>Score: {score}</h2>
-      <button className="Logout">
-        <span >
-          {/*put router link here*/}
+      <button className="logout">
           <Link to="/login">LogOut</Link>
-        </span>
       </button>
-      {/* 3. Show results or show the question game  */}
+      {/*  Show results or show the question game  */}
       {showResults ? (
-        /* 4. Final Results */
+        /*  Final Results */
         <div className="final-results">
           <h1>Final Results</h1>
           <h2>
@@ -104,7 +101,7 @@ function Quizz() {
           <button onClick={() => restartGame()}>Restart game</button>
         </div>
       ) : (
-        /* 5. Question Card  */
+        /*  Question Card  */
         <div className="question-card">
           {/* Current Question  */}
           <h2>
