@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Quizz.css";
+import "./Home.css";
 import { Link , useNavigate } from 'react-router-dom';
 
 function Quizz() {

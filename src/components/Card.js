@@ -3,7 +3,7 @@ import { PropTypes } from "prop-types";
 const Card = ({children, reverse, create }) => {
     return (
         <div 
-        className="todo-card"
+        className="quiz-card"
         style={{backgroundColor: reverse ? "#fff" : "#1c1c1c",
                 backgroundColor: create ? "#2e2e2e" : "#1c1c1c",
                 color: reverse ? "#000" : "#fff",
